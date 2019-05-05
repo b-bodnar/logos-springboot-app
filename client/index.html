@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+      />
+      <link
+      rel="stylesheet"
+      href="css/main.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text-center">Users list</h1>
+      <form id="addUserForm">
+        <div class="form-group">
+          <label for="">Name: </label>
+          <input type="text" id="userName" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="">Email: </label>
+          <input type="email" id="userEmail" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="">Password: </label>
+          <input type="password" id="userPassword" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="">Confirm password: </label>
+          <input
+            type="password"
+            id="userPasswordConfirm"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Sex: </label>
+          <select id="userSexType" class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+
+        <button type="button" id="btnRegister" class="btn btn-success btn-block">Register</button>
+      </form>
+
+      <br>
+
+      <button id="btnPrev" class="btn btn-success">Prev</button>
+      <button id="btnNext" class="btn btn-success">Next</button>
+      <button id="btnLogout" class="btn btn-danger">Logout</button>
+
+      <table class="table" id="usersTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Sex</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
